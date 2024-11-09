@@ -1,7 +1,12 @@
 {
     "cSpell.words": [
         "acel",
+        "classico",
+        "funcao",
         "posicao",
         "SOBREAMENTO"
-    ]
+    ],
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands"
 }
