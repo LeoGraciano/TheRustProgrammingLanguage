@@ -1,3 +1,17 @@
+/*
+Copy: "Types whose values can be duplicated simply by copying bits."
+    É uma copia burra de bit a bit
+    É mais rápida
+    Acionado pela atribuição '='
+    Tendo Copy automaticamente tem Clone
+
+Clone: "A common trait for the ability to explicitly duplicate an object."
+    É uma duplicação inteligente de todos os componentes e subcomponentes
+    É mais lento que Copy
+    Acionando pelo método 'clone()'
+    Pode ter Clone mas não ter Copy
+*/
+
 fn main() {
     // Semântica 'copy'
 
@@ -18,8 +32,13 @@ fn main() {
 
     // Semântica 'move'
     let s1 = String::from("hello");
-    let s2 = s1; // s1 eh movida para s2
+    let s2 = s1; // s1 é movida para s2
 
     println!("s1 = {s2}");
     // println!("s2 = {s1}"); // s1 não é valida
+
+    // ainda é possível fazer um clone
+    let s3 = s2.clone();
+    println!("s2 = {s3}");
+    println!("s2 = {s2}");
 }
