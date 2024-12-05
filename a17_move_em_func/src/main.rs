@@ -21,6 +21,11 @@ fn recebe_ownership(um_string: String) {
     println!("{}", um_string);
 }
 
+// um_inteirio sai fora de escopo
+// um_inteirio fica inválido
+// ele não é dono de ninguem, nehum drop acontece
 fn recebe_copia(um_inteiro: i32) {
     println!("{}", um_inteiro);
 }
+
+
