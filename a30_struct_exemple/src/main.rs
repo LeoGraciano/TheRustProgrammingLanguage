@@ -21,6 +21,8 @@ fn main() {
 
     println!("\n\nchamando area2 ...\n");
     area2(&rect1);
+    let r2 = area2(&rect1);
+    println!("r2 vale {r2}");
 }
 
 fn area(rectangle: &Rectangle) -> u32 {
