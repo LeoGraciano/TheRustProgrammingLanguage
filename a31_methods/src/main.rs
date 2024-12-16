@@ -39,4 +39,5 @@ fn main() {
     //Automatic referencing and deferencing
     println!("Consegue rect1 conter rect3? {}", rect1.can_hold(&rect3));
     // println!("Consegue rect1 conter rect3?", rect1.can_hold(rect3));
+    println!("Consegue rect1 conter rect3? {}", rect1.can_hold(&rect3));
 }
